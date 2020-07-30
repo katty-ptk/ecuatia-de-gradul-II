@@ -1,0 +1,38 @@
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+#title {
+    padding-top: 10%;
+}
+
+#content {
+    margin-top: 6.5%;
+    font-weight: bold;
+}
+
+#first_Num, #second_Num, #third_Num {
+    width: 10%;
+}
+
+#error-text {
+    font-weight: bold;
+}
+
+.result {
+    display: inline-block;
+    padding-top: 10px;    
+}
