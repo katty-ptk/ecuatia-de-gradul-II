@@ -13,7 +13,8 @@ $("#submit-btn").click(function (event) {
 
     if (isNaN($first_num) || isNaN($second_num) || isNaN($third_num)){
         $error_text = '<p id="error-text">Te rog introdu numere. :)</p>';
-        $("body").append($error_text);
+        $("#p-input-error").html($error_text);
+     //   $("body").append($error_text);
     } else {
 
         $x_1 = parseInt(-$second_num + Math.sqrt(Math.pow($second_num, 2) - 4 * ($first_num * $third_num)) / 2 * $first_num).toFixed(0);
@@ -21,7 +22,8 @@ $("#submit-btn").click(function (event) {
 
         if(isNaN($x_1) || isNaN($x_2)) {
             $isNanText = '<p id="resultNan">Rezultatul calculului este o eroare.</p>';
-            $("body").append($isNanText);
+            $("#p-isNan-error").html($isNanText);
+            // $("body").append($isNanText);
            return false;
         }
 
