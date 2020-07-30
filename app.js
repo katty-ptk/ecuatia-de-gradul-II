@@ -27,13 +27,17 @@ $("#submit-btn").click(function (event) {
 
         $result = document.createElement('div');
         $x_1_par = document.createElement('p');
-        $x_1_par.textContent = "x1 = " + $x_1;
-
         $x_2_par = document.createElement('p');
+
+        $x_1_par.textContent = "x1 = " + $x_1;
         $x_2_par.textContent = "x2 = " + $x_2;
 
         $result.append($x_1_par); $result.append($x_2_par);
-        $(".result").html($result);
+        $(".result").append($result);
+
+        $("#x-1-result").html($x_1_par);
+        $("#x-2-result").html($x_2_par);
+
 
         console.log($x_1_par)
 
